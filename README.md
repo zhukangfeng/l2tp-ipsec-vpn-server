@@ -1,7 +1,7 @@
 # IPsec VPN Server on Docker
 
-[![Docker Stars](https://img.shields.io/docker/stars/fcojean/l2tp-ipsec-vpn-server.svg)](https://hub.docker.com/r/fcojean/l2tp-ipsec-vpn-server) 
-[![Docker Pulls](https://img.shields.io/docker/pulls/fcojean/l2tp-ipsec-vpn-server.svg)](https://hub.docker.com/r/fcojean/l2tp-ipsec-vpn-server)
+[![Docker Stars](https://img.shields.io/docker/stars/zhukangfeng/l2tp-ipsec-vpn-server.svg)](https://hub.docker.com/r/zhukangfeng/l2tp-ipsec-vpn-server) 
+[![Docker Pulls](https://img.shields.io/docker/pulls/zhukangfeng/l2tp-ipsec-vpn-server.svg)](https://hub.docker.com/r/zhukangfeng/l2tp-ipsec-vpn-server)
 
 Docker image to run an IPsec VPN server, with support for both `IPsec/L2TP` and `IPsec/XAuth ("Cisco IPsec")`.
 
@@ -20,18 +20,18 @@ Follow [these instructions](https://docs.docker.com/engine/installation/) to get
 
 ## Download
 
-Get the trusted build from the [Docker Hub registry](https://hub.docker.com/r/fcojean/l2tp-ipsec-vpn-server):
+Get the trusted build from the [Docker Hub registry](https://hub.docker.com/r/zhukangfeng/l2tp-ipsec-vpn-server/):
 
 ```
-docker pull fcojean/l2tp-ipsec-vpn-server
+docker pull zhukangfeng/l2tp-ipsec-vpn-server
 ```
 
 or download and compile the source yourself from GitHub:
 
 ```
-git clone https://github.com/fcojean/l2tp-ipsec-vpn-server.git
+git clone https://github.com/zhukangfeng/l2tp-ipsec-vpn-server.git
 cd l2tp-ipsec-vpn-server
-docker build -t fcojean/l2tp-ipsec-vpn-server .
+docker build -t zhukangfeng/l2tp-ipsec-vpn-server .
 ```
 
 ## How to use this image
@@ -72,7 +72,7 @@ docker run \
     -p 4500:4500/udp \
     -v /lib/modules:/lib/modules:ro \
     -d --privileged \
-    fcojean/l2tp-ipsec-vpn-server
+    zhukangfeng/l2tp-ipsec-vpn-server
 ```
 
 ### Retrieve VPN login details
